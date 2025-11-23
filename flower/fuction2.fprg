@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fuction2"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-09 11:11:40 a.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0wOTsxMDo0NTozNSBhLsKgbS47MzgyMg=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0wOTsxMToxMTo0MCBhLsKgbS47MTszOTIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="username" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your name&quot;" newline="True"/>
+            <input variable="username"/>
+            <call expression="ShowGreting(username)"/>
+        </body>
+    </function>
+    <function name="ShowGreting" type="None" variable="">
+        <parameters>
+            <parameter name="userName" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot; hola &quot; &amp; username &amp;&quot;, bienvenido&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
