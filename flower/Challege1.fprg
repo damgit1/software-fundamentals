@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Challenge1"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-22 12:34:19 a.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMTsxMDozNzoxMyBwLsKgbS47MzgyOA=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMjsxMjozNDoxOSBhLsKgbS47MTszOTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Dad" type="Integer" array="False" size=""/>
+            <declare name="Enter" type="String" array="False" size=""/>
+            <output expression="&quot; Press enter to roll the dice &quot;" newline="True"/>
+            <input variable="Enter"/>
+            <assign variable="Dad" expression="RANDOM (6)"/>
+            <if expression="Dad %2 =0">
+                <then>
+                    <output expression="&quot; The number generated on the dice es &quot; &amp; Dad &amp; &quot; what is pair &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; The number generated on the dice es &quot; &amp; Dad &amp; &quot; what is odd &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
