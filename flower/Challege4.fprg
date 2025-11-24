@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Challenge4"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-23 09:07:46 p.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMzswODoxNzowMiBwLsKgbS47MzgzMw=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMzswOTowNzo0NiBwLsKgbS47MTszOTQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Dad1" type="Integer" array="False" size=""/>
+            <declare name="Dad2" type="Integer" array="False" size=""/>
+            <declare name="cont" type="Integer" array="False" size=""/>
+            <declare name="numLanz" type="Integer" array="False" size=""/>
+            <declare name="enter" type="String" array="False" size=""/>
+            <output expression="&quot; Ingresar el numero de vez que quiere lanzar los dados &quot;" newline="True"/>
+            <input variable="numLanz"/>
+            <assign variable="cont" expression="0"/>
+            <assign variable="Dad1" expression="0"/>
+            <assign variable="Dad2" expression="0"/>
+            <while expression="Not ((Dad1=6 and Dad2=6) OR (cont = numLanz))">
+                <assign variable="cont" expression="cont + 1"/>
+                <output expression="&quot; Preionar enter para lanzar los dados &quot;" newline="True"/>
+                <input variable="enter"/>
+                <assign variable="Dad1" expression="RANDOM (6)"/>
+                <assign variable="Dad2" expression="RANDOM (6)"/>
+                <output expression="&quot; El dado 1 es igual a &quot; &amp; Dad1" newline="True"/>
+                <output expression="&quot; El dado 2 es igual a &quot; &amp; Dad2" newline="True"/>
+            </while>
+            <if expression="Dad1=6 and Dad2=6">
+                <then>
+                    <output expression="&quot; Ganaste sacaste un par de 6 &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;  Perdiste en tus numeros de intentos ninguno fue par de 6 &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
