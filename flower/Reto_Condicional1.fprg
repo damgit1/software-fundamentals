@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reto_Condicional1"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-21 09:10:03 p.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMTswODoxMToyNyBwLsKgbS47MzgzMg=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMTswOToxMDowMyBwLsKgbS47MTszOTM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Dad1" type="Integer" array="False" size=""/>
+            <declare name="Dad2" type="Integer" array="False" size=""/>
+            <declare name="Enter" type="String" array="False" size=""/>
+            <output expression="&quot; Press enter to roll the dice &quot;" newline="True"/>
+            <input variable="Enter"/>
+            <assign variable="Dad1" expression="RANDOM (6)"/>
+            <assign variable="Dad2" expression="RANDOM (6)"/>
+            <output expression="&quot; Dice one is &quot; &amp; Dad1" newline="True"/>
+            <output expression="&quot; Dice one is &quot; &amp; Dad2" newline="True"/>
+            <if expression="Dad1 %2 == 0">
+                <then>
+                    <output expression="&quot; The die 1 is an pair number &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; The die 1 is an odd number &quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="Dad2 %2 == 0">
+                <then>
+                    <output expression="&quot; The die 2 is an pair number &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; The die 2 is an odd number &quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="Dad1 == Dad2">
+                <then>
+                    <output expression="&quot; YOU WIN &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; GAME OVER &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
