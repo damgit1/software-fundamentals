@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Challenge5"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-23 09:58:08 p.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMzswOTozNTo0NCBwLsKgbS47Mzg0MA=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMzswOTo1ODowOCBwLsKgbS47MjszOTU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dad1" type="Integer" array="False" size=""/>
+            <declare name="numLanz" type="Integer" array="False" size=""/>
+            <declare name="contLanz" type="Integer" array="False" size=""/>
+            <declare name="contPar" type="Integer" array="False" size=""/>
+            <declare name="contImpar" type="Integer" array="False" size=""/>
+            <assign variable="contLanz" expression="0"/>
+            <assign variable="contPar" expression="0"/>
+            <assign variable="contImpar" expression="0"/>
+            <output expression="&quot; Ingrese el numero de lanzamiento &quot;" newline="True"/>
+            <input variable="numLanz"/>
+            <for variable="contLanz" start="1" end="numLanz" direction="inc" step="1">
+                <assign variable="dad1" expression="RANDOM (6)"/>
+                <output expression="&quot; Lanzamiento &quot; &amp; contLanz &amp; &quot; fue de &quot; &amp; dad1" newline="True"/>
+                <if expression="(dad1 %2 = 0)">
+                    <then>
+                        <assign variable="contPar" expression="contPar + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="contImpar" expression="contImpar + 1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot; El total de pare fueron &quot; &amp; contPar" newline="True"/>
+            <output expression="&quot; El total de impares fueron &quot; &amp; contImpar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
