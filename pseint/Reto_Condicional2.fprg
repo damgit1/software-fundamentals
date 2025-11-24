@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reto_Condicional2"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-21 10:09:21 p.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMTswOTozMzozMiBwLsKgbS47MzgzMw=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMTsxMDowOToyMSBwLsKgbS47MTszOTM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num" type="Integer" array="False" size=""/>
+            <output expression="&quot; Enter a positive or negative number &quot;" newline="True"/>
+            <input variable="Num"/>
+            <if expression="Abs (Num) % 2 == 0">
+                <then>
+                    <output expression="&quot; The number &quot; &amp; Num &amp; &quot; is pair &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; The number &quot; &amp; Num &amp; &quot; is odd &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
