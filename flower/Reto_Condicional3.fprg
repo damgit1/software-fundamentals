@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reto_Condicional3"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-21 10:37:00 p.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMTsxMDoxMDoxMiBwLsKgbS47MzgxOA=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMTsxMDozNzowMCBwLsKgbS47MTszOTMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a positive or negative number&quot;" newline="True"/>
+            <input variable="Num"/>
+            <if expression="Abs (Num) %2 = 0">
+                <then>
+                    <output expression="&quot; The number &quot; &amp; Num &amp; &quot; is pair &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; The number &quot; &amp; Num &amp; &quot; is odd &quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="Num &gt;= 0">
+                <then>
+                    <output expression="&quot; The number &quot; &amp; Num &amp; &quot; is positive &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; The number &quot; &amp; Num &amp; &quot; is negative &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
