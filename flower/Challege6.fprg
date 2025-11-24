@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Challege6"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-23 11:20:05 p.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMzsxMDoxNjowNyBwLsKgbS47MzgzMA=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMzsxMToyMDowNSBwLsKgbS47MzszOTM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="enter" type="String" array="False" size=""/>
+            <declare name="opc" type="String" array="False" size=""/>
+            <declare name="dad" type="Integer" array="False" size=""/>
+            <declare name="contLaz" type="Integer" array="False" size=""/>
+            <declare name="acumDados" type="Integer" array="False" size=""/>
+            <declare name="contPar" type="Integer" array="False" size=""/>
+            <declare name="contImpar" type="Integer" array="False" size=""/>
+            <assign variable="contLaz" expression="1"/>
+            <assign variable="acumDados" expression="0"/>
+            <assign variable="contPar" expression="1"/>
+            <assign variable="contImpar" expression="1"/>
+            <output expression="&quot; Presione enter para lanzar el dado &quot;" newline="True"/>
+            <input variable="enter"/>
+            <assign variable="dad" expression="RANDOM (6)"/>
+            <output expression="&quot; Lanzamiento &quot; &amp; contLaz &amp; &quot; dado igual a &quot; &amp; dad" newline="True"/>
+            <output expression="&quot; quieres seguir lanzando el dado (si / no )&quot;" newline="True"/>
+            <input variable="opc"/>
+            <while expression="opc = &quot;si&quot;">
+                <assign variable="contLaz" expression="contLaz + 1"/>
+                <assign variable="dad" expression="RANDOM (6)"/>
+                <output expression="&quot; Lanzamiento &quot; &amp; contLaz &amp; &quot; dado igual a &quot; &amp; dad" newline="True"/>
+                <assign variable="acumDados" expression="acumDados + dad"/>
+                <output expression="&quot; quieres seguir lanzando el dado (Si / No )&quot;" newline="True"/>
+                <input variable="opc"/>
+                <if expression="dad % 2 = 0">
+                    <then>
+                        <assign variable="contPar" expression="contPar + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="contImpar" expression="contImpar + 1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot; Reporte Final &quot;" newline="True"/>
+            <output expression="&quot; El total de lanzamients fue &quot; &amp; contLaz" newline="True"/>
+            <output expression="&quot; La suma total de los lanzamientos fue &quot; &amp; acumDados" newline="True"/>
+            <output expression="&quot; El total de pares son &quot; &amp; contPar" newline="True"/>
+            <output expression="&quot; El total de impares fue &quot; &amp; contImpar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
