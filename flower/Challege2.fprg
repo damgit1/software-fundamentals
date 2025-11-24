@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Challenge2"/>
+        <attribute name="authors" value="Asus VivoBook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-22 01:17:11 a.&#160;m."/>
+        <attribute name="created" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMjsxMjozNToyOSBhLsKgbS47MzgyMQ=="/>
+        <attribute name="edited" value="QXN1cyBWaXZvQm9vaztERVNLVE9QLTJVMTIwQzA7MjAyNS0xMS0yMjswMToxNzoxMSBhLsKgbS47MTszOTE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Dad" type="Integer" array="False" size=""/>
+            <declare name="Sum" type="Integer" array="False" size=""/>
+            <declare name="NumLanz" type="Integer" array="False" size=""/>
+            <declare name="Acum" type="Integer" array="False" size=""/>
+            <assign variable="Acum" expression="1"/>
+            <assign variable="Sum" expression="0"/>
+            <output expression="&quot; Enter number of dice rolls &quot;" newline="True"/>
+            <input variable="NumLanz"/>
+            <for variable="Acum" start="1" end="Numlanz" direction="inc" step="1">
+                <assign variable="Dad" expression="RANDOM (6)"/>
+                <assign variable="Sum" expression="Sum + Dad"/>
+                <output expression="&quot; The roll of the dice &quot; &amp; Acum &amp; &quot; was &quot; &amp; Dad" newline="True"/>
+            </for>
+            <output expression="&quot; The number of pitches was &quot; &amp; Numlanz" newline="True"/>
+            <output expression="&quot; The total number of throws was &quot; &amp; Sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
