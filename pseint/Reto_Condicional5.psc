@@ -30,7 +30,7 @@ Algoritmo Reto_Condicional5
 		FinSi
 	FinSi
 	
-	si (salario >= 1200000) O (salario < 2000000) Entonces
+	si (salario >= 1200000) y (salario < 2000000) Entonces
 		aumento = salario * 0.05
 	finsi
 	
